@@ -1,3 +1,42 @@
+/* CSS comment
+Colors used:
+Primary Color (LightBlue): #71daf4;
+Secondary Color 1 (LightGreen): #6FF893;
+Secondary Color 2 (Purple): #7E98F6;
+*/
 body {
-  background-color: lightgrey;
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #4a4a4a;
+}
+span {
+  font-size: 0.5em;
+}
+h1, h2, h3, h4 {
+  font-family: 'Cormorant Garamond', sans-serif;
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+img {
+  width: 100%;
 }
