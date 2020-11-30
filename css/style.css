@@ -73,7 +73,7 @@ a:active {
   border-bottom: 2px solid #6FF893; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
-.button:hover {
+.button:hover, .button:focus {
   opacity: 0.7;
   text-decoration: none;
 }
@@ -88,7 +88,7 @@ a:active {
   text-transform: uppercase;
   border: 2px solid #6FF893;
 }
-.button.contact:hover {
+.button.contact:hover, .button.contact:focus {
   background-color: #71daf4;
   color: #ffffff;
 }
