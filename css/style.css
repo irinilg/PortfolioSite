@@ -26,17 +26,54 @@ header {
   box-shadow: 0px 7px 11px 0px rgba(50, 50, 50, 0.89);
   position: fixed;
   width: 100%;
+  padding: 10px 0;
 }
 
 footer {
   background-color: #0d9dda;
-  padding: 5px;
+  padding: 50px 0 0;
   border-top: 3px solid #ffffff;
+  text-align: center;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+}
+
+.socialmedia ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.socialmedia li {
+  display: inline-block;
+}
+
+.socialmedia .fab {
+  font-size: 2em;
+  color: #fff;
+}
+
+.socialmedia a, .socialmedia a:visited {
+  padding: 0 15px;
+}
+
+.socialmedia a:hover, .socialmedia a:active {
+  color: red;
+}
+
+.copy {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  font-size: 0.8em;
 }
 
 span {
   font-size: 0.5em;
   display: block;
+  margin: 1em 0;
+  line-height: 1.4;
 }
 
 h1, h2, h3, h4 {
@@ -48,7 +85,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.75em;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1;
 }
 
 h2 {
@@ -69,10 +106,6 @@ h4 {
   line-height: 1.8;
 }
 
-p {
-  margin: 5px auto;
-}
-
 img {
   width: 100%;
 }
@@ -81,7 +114,7 @@ picture {
   max-width: 1200px;
   width: 80%;
   display: block;
-  padding: 10px;
+  padding: 10px 0;
   margin: 0 auto;
 }
 
@@ -125,9 +158,7 @@ a:hover, a:focus, a:active {
 
 /* Containers , Rows, and Columns */
 .container {
-  padding: 15px;
-  max-width: 900px;
-  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .row {
@@ -139,20 +170,30 @@ a:hover, a:focus, a:active {
   border-bottom: 1px solid #4a4a4a;
 }
 
+#work .row:last-child, .about .row:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
 .logo {
   font-family: 'Cormorant Garamond', sans-serif;
   text-decoration: none;
   color: black !important;
-  background-color: white;
+  background-color: #fff;
   padding: 3px;
   border: 2px solid #4a4a4a;
   font-size: 2em;
 }
 
+nav {
+  margin-top: 10px;
+}
+
 nav>ul {
   list-style-type: none;
   padding: 0;
-  width: 100%;
+  margin: 0;
 }
 
 nav>ul>li {
@@ -173,31 +214,19 @@ nav>ul>li>a:hover, nav>ul>li>a:active {
 
 #hero {
   background-color: #99ccff;
+  text-align: center;
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 116px;
 }
 
 .section {
-  padding: 10px;
+  padding: 45px 0;
 }
 
-.socialmedia a, .socialmedia a:visited {
-  list-style-type: none !important;
-  width: 100%;
-  display: inline-block;
-  padding: 0 15px;
-  color: #4a4a4a !important;
-}
-
-.socialmedia a:hover, .socialmedia a:active {
-  color: red;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
+.project .section:not(:first-child) {
+  padding: 25px 0;
 }
 
 .row::after {
@@ -206,44 +235,89 @@ main {
   display: table;
 }
 
-/* Top border go down and Left border appears */
-div.topLeftBorders a:before
-{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 2px;
-    height: 0px;
-    background: #FFF;
-    content: "";
-    opacity: 1;
-    transition: all 0.3s;
+#svg2 {
+  width 100%;
+  max-width 100%;
+  height: auto;
 }
 
-div.topLeftBorders a:after
-{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: #FFF;
-    content: "";
-    opacity: 1;
-    transition: all 0.3s;
+@keyframes color-change {
+  from {fill: #f6e67d;}
+  to {fill: yellow;}
 }
 
-div.topLeftBorders a:hover:before
-{
-    height: 100%;
+.g .s {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 
-div.topLeftBorders a:hover:after
-{
-    opacity: 0;
-    top: 100%;
+@keyframes color-change1 {
+  from {fill: #f36648;}
+  to {fill: red;}
 }
 
+.a .l {
+  animation-duration: 4s;
+  animation-name: color-change1;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes color-change2 {
+  from {fill: #81d6e8;}
+  to {fill: lightblue;}
+}
+
+.n .e2 {
+  animation-duration: 4s;
+  animation-name: color-change2;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes color-change3 {
+  from {fill: #f9b2d8;}
+  to {fill: pink;}
+}
+
+.e1 {
+  animation-duration: 4s;
+  animation-name: color-change3;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes star-spin {
+  from {transform: rotate(0);}
+  to {transform: rotate(5);}
+}
+
+.star .star1 .star2 {
+  animation-duration: 20s;
+  animation-name: star-spin;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes mountain-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.blackmountain {
+  animation-duration: 30s;
+  animation-name: mountain-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -256,7 +330,7 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 17px;
   }
 
   main {
@@ -267,12 +341,60 @@ Medium devices (640px and larger)
     font-size: 18px;
   }
 
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
   .col-md-6 {
     width: 50%;
   }
 
   #about-page h3 {
     margin-top: 0;
+  }
+
+  /* Top border go down and Left border appears */
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  ul.topLeftBorders li a {
+    position: relative;
+    padding: 10px;
+  }
+
+  ul.topLeftBorders a:before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 2px;
+    height: 0px;
+    background: #FFF;
+    content: "";
+    opacity: 1;
+    transition: all 0.3s;
+  }
+
+  ul.topLeftBorders a:after {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 1;
+    transition: all 0.3s;
+  }
+
+  ul.topLeftBorders a:hover:before {
+    height: 100%;
+  }
+
+  ul.topLeftBorders a:hover:after {
+    opacity: 0;
+    top: 100%;
   }
 }
 
@@ -283,13 +405,14 @@ Large devices (1024px or larger)
   .col-lg-7 {
     width: 60%;
   }
+
   .col-lg-5 {
     width: 40%;
   }
+
   .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 900px;
+    margin: 0 auto;
   }
 }
 
@@ -300,7 +423,12 @@ X-large devices (1440px or larger)
   .col-xl-8 {
     width: 70%;
   }
+
   .col-xl-4 {
     width: 30%;
+  }
+
+  .container {
+    max-width: 1200px;
   }
 }
