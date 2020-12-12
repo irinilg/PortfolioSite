@@ -1,8 +1,8 @@
 /* CSS comment
 Colors used:
-Primary Color (LightBlue): #71daf4;
+Primary Color (LightBlue): #0d9dda;
 Secondary Color 1 (light orange): #ffcc99;
-Secondary Color 2 (Purple): #7E98F6;
+Secondary Color 2 (Purple): #3f51b5;
 blue #99ccff
 */
 /* Generic Styling*/
@@ -29,9 +29,9 @@ header {
 }
 
 footer {
-  background-color: #99ccff;
+  background-color: #0d9dda;
   padding: 5px;
-  border-top: 3px solid #4a4a4a;
+  border-top: 3px solid #ffffff;
 }
 
 span {
@@ -204,6 +204,44 @@ main {
   content: "";
   clear: both;
   display: table;
+}
+
+/* Top border go down and Left border appears */
+div.topLeftBorders a:before
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 2px;
+    height: 0px;
+    background: #FFF;
+    content: "";
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+div.topLeftBorders a:after
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+div.topLeftBorders a:hover:before
+{
+    height: 100%;
+}
+
+div.topLeftBorders a:hover:after
+{
+    opacity: 0;
+    top: 100%;
 }
 
 /* ==============================
