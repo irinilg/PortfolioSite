@@ -243,15 +243,11 @@ main {
 
 @keyframes color-change {
   from {fill: #f6e67d;}
-  to {fill: yellow;}
+  to {fill: orange;}
 }
 
-.g .s {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+.g, .s {
+  animation: 4s color-change infinite alternate linear;
 }
 
 @keyframes color-change1 {
@@ -259,51 +255,67 @@ main {
   to {fill: red;}
 }
 
-.a .l {
-  animation-duration: 4s;
-  animation-name: color-change1;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+.a, .l {
+  animation: 4s color-change1 infinite alternate linear;
 }
 
 @keyframes color-change2 {
   from {fill: #81d6e8;}
-  to {fill: lightblue;}
+  to {fill: blue;}
 }
 
-.n .e2 {
-  animation-duration: 4s;
-  animation-name: color-change2;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+.n, .e2 {
+  animation: 4s color-change2 infinite alternate linear;
 }
 
 @keyframes color-change3 {
   from {fill: #f9b2d8;}
-  to {fill: pink;}
+  to {fill: purple;}
 }
 
 .e1 {
-  animation-duration: 4s;
-  animation-name: color-change3;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+  animation: 4s color-change3 infinite alternate linear;
 }
 
-@keyframes star-spin {
-  from {transform: rotate(0);}
-  to {transform: rotate(5);}
+@keyframes spin {
+  0% {
+        transform:rotate(-2deg);
+    }
+  100% {
+        transform:rotate(3deg);
+    }
+}
+.los {
+  transform-origin: center;
+  animation: .5s spin infinite alternate linear;
 }
 
-.star .star1 .star2 {
-  animation-duration: 20s;
-  animation-name: star-spin;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+@keyframes spin1 {
+  0% {
+        transform:rotateY(0deg);
+    }
+  100% {
+        transform:rotateY(360deg);
+    }
+}
+.star1 {
+  transform-origin: right;
+  animation: 4s spin1 infinite alternate linear;
+}
+
+@keyframes spin2 {
+  0% {
+    transform: rotateX(-10deg);
+  }
+
+  100% {
+    transform: rotateX(10deg);
+  }
+}
+
+.star2 {
+  transform-origin: top;
+  animation: 1s spin2 infinite alternate linear;
 }
 
 @keyframes mountain-move {
@@ -312,12 +324,9 @@ main {
 }
 
 .blackmountain {
-  animation-duration: 30s;
-  animation-name: mountain-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+  animation: 3s mountain-move infinite alternate linear;
 }
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -420,12 +429,8 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-  .col-xl-8 {
-    width: 70%;
-  }
-
-  .col-xl-4 {
-    width: 30%;
+  .col-xl-8 .col-xl-4 {
+    width: 50%;
   }
 
   .container {
