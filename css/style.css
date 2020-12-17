@@ -68,6 +68,13 @@ footer a {
   font-size: 0.8em;
 }
 
+.grey{
+  color:#4a4a4a!important;
+  font-size: 0.5em;
+  display: block;
+  text-decoration: none;
+}
+
 span {
   font-size: 0.5em;
   display: block;
@@ -107,6 +114,11 @@ h4 {
 
 img {
   width: 100%;
+}
+
+.animation {
+  max-width: 100%;
+  height: auto;
 }
 
 picture {
@@ -263,7 +275,6 @@ main {
 }
 
 #svg2 {
-  width 100%;
   max-width 100%;
   height: auto;
 }
@@ -480,11 +491,11 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
   .col-lg-7 {
-    width: 60%;
+    width: 50%;
   }
 
   .col-lg-5 {
-    width: 40%;
+    width: 50%;
   }
 
   .container {
