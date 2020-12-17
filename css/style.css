@@ -216,9 +216,6 @@ nav>ul>li>a:hover, nav>ul>li>a:active {
   padding-right: 0;
 }
 
-.navtoggle.responsive li  {
-  display: block;
-}
 .navtoggle.responsive nav {
   padding: 20px 0 0;
 }
@@ -256,7 +253,7 @@ main {
 }
 
 #svg2 {
-  max-width 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -372,6 +369,14 @@ Medium devices (640px and larger)
 
   nav>ul {
     margin: 1em 0;
+  }
+
+  .navtoggle.responsive nav {
+  padding: 0px;
+  }
+
+  .navtoggle.responsive li {
+  border-top: 0px solid rgba(6, 11, 251, 0.5);
   }
 
   .navtoggle li:not(:last-child) {
