@@ -10,6 +10,10 @@ blue #99ccff
   box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Open Sans', sans-serif;
@@ -88,38 +92,14 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
-h1 {
-  font-size: 2.75em;
-  font-weight: 700;
-  line-height: 1;
-}
+h1 {font-size: 2.75em;font-weight: 700;line-height: 1;}
+h2 {font-size: 2.25em;font-weight: 700;line-height: 1.4;}
+h3 {font-size: 1.75em;font-weight: 400;line-height: 1.6;}
+h4 {font-size: 1.35em;font-weight: 400;line-height: 1.8;}
 
-h2 {
-  font-size: 2.25em;
-  font-weight: 700;
-  line-height: 1.4;
-}
+img {width: 100%;}
 
-h3 {
-  font-size: 1.75em;
-  font-weight: 400;
-  line-height: 1.6;
-}
-
-h4 {
-  font-size: 1.35em;
-  font-weight: 400;
-  line-height: 1.8;
-}
-
-img {
-  width: 100%;
-}
-
-.animation {
-  max-width: 100%;
-  height: auto;
-}
+.animation {max-width: 100%;height: auto;}
 
 picture {
   max-width: 1200px;
@@ -279,70 +259,40 @@ main {
   height: auto;
 }
 
+/* ==============================
+Animations
+================================= */
 @keyframes color-change {
-  from {
-    fill: #f6e67d;
-  }
-
-  to {
-    fill: orange;
-  }
+  from {fill: #f6e67d;}
+  to {fill: orange;}
 }
 
-.g, .s {
-  animation: 4s color-change infinite alternate linear;
-}
+.g, .s {animation: 4s color-change infinite alternate linear;}
 
 @keyframes color-change1 {
-  from {
-    fill: #f36648;
-  }
-
-  to {
-    fill: red;
-  }
+  from {fill: #f36648;}
+  to {fill: red;}
 }
 
-.a, .l {
-  animation: 4s color-change1 infinite alternate linear;
-}
+.a, .l {animation: 4s color-change1 infinite alternate linear;}
 
 @keyframes color-change2 {
-  from {
-    fill: #81d6e8;
-  }
-
-  to {
-    fill: blue;
-  }
+  from {fill: #81d6e8;}
+  to {fill: blue;}
 }
 
-.n, .e2 {
-  animation: 4s color-change2 infinite alternate linear;
-}
+.n, .e2 {animation: 4s color-change2 infinite alternate linear;}
 
 @keyframes color-change3 {
-  from {
-    fill: #f9b2d8;
-  }
-
-  to {
-    fill: purple;
-  }
+  from {fill: #f9b2d8;}
+  to {fill: purple;}
 }
 
-.e1 {
-  animation: 4s color-change3 infinite alternate linear;
-}
+.e1 {animation: 4s color-change3 infinite alternate linear;}
 
 @keyframes spin {
-  0% {
-    transform: rotate(-2deg);
-  }
-
-  100% {
-    transform: rotate(3deg);
-  }
+  0% {transform: rotate(-2deg);}
+  100% {transform: rotate(3deg);}
 }
 
 .los {
@@ -351,13 +301,8 @@ main {
 }
 
 @keyframes spin1 {
-  0% {
-    transform: rotateY(0deg);
-  }
-
-  100% {
-    transform: rotateY(360deg);
-  }
+  0% {transform: rotateY(0deg);}
+  100% {transform: rotateY(360deg);}
 }
 
 .star1 {
@@ -366,13 +311,8 @@ main {
 }
 
 @keyframes spin2 {
-  0% {
-    transform: rotateX(-10deg);
-  }
-
-  100% {
-    transform: rotateX(10deg);
-  }
+  0% {transform: rotateX(-10deg);}
+  100% {transform: rotateX(10deg);}
 }
 
 .star2 {
@@ -381,18 +321,11 @@ main {
 }
 
 @keyframes mountain-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
+  from {transform: translate(0, 50px);}
+  to {transform: translate(200px, 50px);}
 }
 
-.blackmountain {
-  animation: 3s mountain-move infinite alternate linear;
-}
+.blackmountain {animation: 3s mountain-move infinite alternate linear;}
 
 /* ==============================
 Medium devices (640px and larger)
