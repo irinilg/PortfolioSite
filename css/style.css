@@ -169,7 +169,7 @@ a:hover, a:focus, a:active {
   background-color: #fff;
   color: #0c819e !important;
   text-transform: uppercase;
-  border: 2px solid #fc9;
+  border: 2px solid black;
 }
 
 .button.contact:hover, .button.contact:focus, .button.contact:active {
