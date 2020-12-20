@@ -155,7 +155,7 @@ a:hover, a:focus, a:active {
   border-radius: 3px;
   display: inline-block;
   padding: 10px;
-  border-bottom: 2px solid #fc9;
+  border-bottom: 2px solid black;
   transition: 0.2s opacity;
   text-decoration: none;
   margin: 5px;
