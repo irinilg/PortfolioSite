@@ -1,9 +1,8 @@
 /* CSS comment
 Colors used:
 Primary Color (LightBlue): #0d9dda;
-Secondary Color 1 (light orange): #ffcc99;
 Secondary Color 2 (Purple): #3f51b5;
-blue #99ccff
+Accent Color (): #
 */
 /* Generic Styling */
 * {
@@ -34,7 +33,7 @@ header {
 }
 
 footer {
-  background-color: #0a7eb0;
+  background-color: #004d99;
   padding: 50px 0 0;
   border-top: 3px solid #fff;
   text-align: center;
@@ -153,12 +152,12 @@ a:hover, a:focus, a:active {
 
 .button {
   color: #fff !important;
-  background-color: #0c819e;
+  background-color: #0080ff;
   font-weight: 700;
   border-radius: 3px;
   display: inline-block;
   padding: 10px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #ff7f00;
   transition: 0.2s opacity;
   text-decoration: none;
   margin: 5px;
@@ -172,7 +171,7 @@ a:hover, a:focus, a:active {
   background-color: #fff;
   color: #4a4a4a !important;
   text-transform: uppercase;
-  border: 2px solid black;
+  border: 2px solid #ff7f00;
 }
 
 .button.contact:hover, .button.contact:focus, .button.contact:active {
@@ -215,13 +214,13 @@ nav {
   margin-top: 0px;
 }
 
-nav>ul {
+nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav>ul>li>a, nav>ul>li>a:visited {
+nav ul li a, nav ul li a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -229,7 +228,7 @@ nav>ul>li>a, nav>ul>li>a:visited {
   text-decoration: none;
 }
 
-nav>ul>li>a:hover, nav>ul>li>a:active {
+nav ul li a:hover, nav ul li a:active {
   color: black;
 }
 
@@ -441,17 +440,21 @@ Medium devices (640px and larger)
     width: 50%;
   }
 
+  .col-md-12 {
+    width: 100%;
+  }
+
   #about-page h3 {
     margin-top: 0;
     text-align: center;
   }
 
   /* Top border go down and Left border appears */
-  nav>ul>li {
+  nav ul li {
     display: inline-block;
   }
 
-  nav>ul {
+  nav ul {
     margin: 1em 0;
   }
 
