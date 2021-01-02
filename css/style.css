@@ -1,9 +1,8 @@
 /* CSS comment
 Colors used:
-Primary Color (LightBlue): #0d9dda;
-Secondary Color 2 (Purple): #3f51b5;
-Accent Color (): #
-*/
+Primary Color (Light Blue): #9cf;
+Secondary Color 2 (Dark Blue): #004d99;
+Accent Color (Orange): #ff7f00; */
 /* Generic Styling */
 * {
   box-sizing: border-box;
@@ -25,8 +24,8 @@ body {
 header {
   background-color: #9cf;
   color: #4a4a4a;
-  border-bottom: 1px solid #4a4a4a;
-  box-shadow: 1px 7px 11px 1px rgba(50, 50, 50, 0.89);
+  border-bottom: 1px solid #9cf;
+  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.2);
   position: fixed;
   width: 100%;
   padding: 10px 0 5px;
@@ -62,11 +61,13 @@ b {
   color: #fff;
 }
 
-.socialmedia a, .socialmedia a:visited {
+.socialmedia a,
+.socialmedia a:visited {
   padding: 0 15px;
 }
 
-.socialmedia a:hover, .socialmedia a:active {
+.socialmedia a:hover,
+.socialmedia a:active {
   color: black;
 }
 
@@ -122,24 +123,30 @@ h4 {
 
 img {
   width: 100%;
+  margin: 10px 0px;
 }
 
 .prototype {
-  width: 320px;
-  height: 560px;
+  width: 100%;
+  min-height: 510px;
+  max-width: 320px;
+  margin: 15px 0;
 }
 
 .video {
   width: 100%;
-  height: 320px;
+  max-width: 600px;
+  min-height: 160px;
+  margin: 15px 0;
 }
 
 picture {
-  max-width: 1200px;
+  max-width: 800px;
   width: 80%;
   display: block;
   padding: 10px 0;
   margin: 0 auto;
+  border: 3px blue;
 }
 
 a, a:visited {
@@ -150,17 +157,24 @@ a:hover, a:focus, a:active {
   color: #fc9;
 }
 
+.about .button {
+margin-bottom: 3em;
+}
+
 .button {
   color: #fff !important;
   background-color: #004d99;
   font-weight: 700;
   border-radius: 3px;
   display: inline-block;
-  padding: 10px;
+  padding: 10px 30px;
   border-bottom: 2px solid #ff7f00;
   transition: 0.2s opacity;
   text-decoration: none;
-  margin: 5px;
+  margin: 5px 0;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
 }
 
 .button:hover, .button:focus, .button:active {
@@ -185,7 +199,7 @@ a:hover, a:focus, a:active {
 }
 
 .row {
-  margin: 25px 0;
+  margin: 15px 0;
 }
 
 #work .row {
@@ -206,7 +220,7 @@ a:hover, a:focus, a:active {
   background-color: #fff;
   padding: 3px;
   border: 2px solid #4a4a4a;
-  font-size: 2em;
+  font-size: 1.4em;
   font-weight: 700;
 }
 
@@ -221,11 +235,12 @@ nav ul {
 }
 
 nav ul li a, nav ul li a:visited {
-  padding: 0 15px;
+  padding: 12px 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
   text-decoration: none;
+  display: block;
 }
 
 nav ul li a:hover, nav ul li a:active {
@@ -243,7 +258,7 @@ nav ul li a:hover, nav ul li a:active {
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: 2px;
+  top: -10px;
   font-size: 20px;
   padding-right: 0;
 }
@@ -254,8 +269,7 @@ nav ul li a:hover, nav ul li a:active {
 
 .navtoggle.responsive li {
   display: block;
-  padding: 12px 0;
-  border-top: 1.5px solid rgba(6, 11, 251, 0.5);
+  border-top: 1.5px solid rgba(6, 11, 251, 0.1);
 }
 
 .navtoggle.responsive li:last-child {
@@ -272,11 +286,11 @@ main {
 }
 
 .section {
-  padding: 45px 0;
+  padding: 30px 0;
 }
 
 .project .section:not(:first-child) {
-  padding: 25px 0;
+  padding: 5px 0;
 }
 
 .row::after {
@@ -417,6 +431,11 @@ Medium devices (640px and larger)
     padding: 20px 0 13px;
   }
 
+  .project p {
+    width: 80%;
+    margin: 0px auto;
+  }
+
   nav {
     width: auto;
     float: right;
@@ -429,6 +448,10 @@ Medium devices (640px and larger)
 
   body {
     font-size: 18px;
+  }
+
+  .logo {
+    font-size: 2em;
   }
 
   [class*="col-"] {
