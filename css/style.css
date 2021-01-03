@@ -129,6 +129,17 @@ img {
   align-items: center;
 }
 
+picture {
+  max-width: 800px;
+  width: 100%;
+  display: block;
+  padding: 10px 0;
+  margin: 0 auto;
+  border: 3px blue;
+  display: flex;
+  align-items: center;
+}
+
 .prototype {
   width: 100%;
   min-height: 510px;
@@ -141,15 +152,6 @@ img {
   max-width: 600px;
   min-height: 160px;
   margin: 15px 0;
-}
-
-picture {
-  max-width: 800px;
-  width: 80%;
-  display: block;
-  padding: 10px 0;
-  margin: 0 auto;
-  border: 3px blue;
 }
 
 a, a:visited {
@@ -436,7 +438,7 @@ Medium devices (640px and larger)
 
   .project p {
     width: 80%;
-    margin: 0px auto;
+    margin: 1px auto;
   }
 
   .section {
@@ -446,7 +448,7 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 17px;
+    margin-top: -5px;
   }
 
   main {
