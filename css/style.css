@@ -127,6 +127,7 @@ img {
   max-width: 600px;
   display: flex;
   align-items: center;
+  border: 3px solid blue;
 }
 
 picture {
@@ -135,7 +136,7 @@ picture {
   display: block;
   padding: 10px 0;
   margin: 0 auto;
-  border: 3px blue;
+  border: 3px solid blue;
   display: flex;
   align-items: center;
 }
@@ -438,8 +439,8 @@ Medium devices (640px and larger)
 
   .project p {
     width: 80%;
-    margin: 1px auto;
-  } 
+    margin: 60px auto;
+  }
 
   .section {
     padding: 100px 0 80px;
@@ -457,6 +458,15 @@ Medium devices (640px and larger)
 
   body {
     font-size: 18px;
+  }
+
+  .prototype {
+    margin: 10px auto;
+  }
+
+  .video {
+    min-height: 460px;
+    min-width: 800px;
   }
 
   .logo {
